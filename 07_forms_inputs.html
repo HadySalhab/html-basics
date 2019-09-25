@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Forms ^ Inputs</title>
+</head>
+<body>
+<form action="process.php">
+    <div>
+        <!-- TextInput -->
+        <label for="name">Name</label><br>
+        <!-- name = is used for javascript-->
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <!-- 
+            for: matches the id of the input
+            so when u presses on the label it will highlight the form
+            type:defines the type of input
+            name: is used on the server side
+            placeholder is like hint
+            -->
+            <!-- Email Input -->
+        <label for="email">Email</label><br>
+        <input type="email"name="email" id="email" placeholder="jdep@gmail.com">
+    </div>
+    <div>
+        <!-- TextArea -->
+        <!-- message is used for large text like bio -->
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" cols="50" rows="5"></textarea>
+    </div>
+    <div>
+        <!-- Dropdown -->
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+            <!-- value is the actual value sent to the server -->
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <div>
+        <!-- Number Input -->
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age">
+    </div>
+    <!-- Date Input -->
+        <label for="bithdate">Birthday</label><br>
+        <input type="date" name="birthdate" id="birthdate">
+    </div>
+    <div>
+        <!-- Radio Input -->
+        <!-- value is the actual value sent to the server -->
+        <label for="membership">Membership</label>
+        <input type="radio" name="membership" value="simple" id="membership" checked>Simple
+        <input type="radio" name="membership" value="standard" id="membership">Standard
+        <input type="radio" name="membership" value="Super" id="membership">Super
+    </div>
+    <div>
+        <!-- CheckBox -->
+        <!-- value is the actual value sent to the server-->
+        <label for="membership">I like..</label>
+        <input type="checkbox" name="likes" value="Bike" id="likes">Bike
+        <input type="checkbox" name="likes" value="Car" id="likes">Car
+        <input type="checkbox" name="likes" value="Boat" id="likes">Boat
+    </div>
+    <!-- Buttons -->
+    <input type ="submit" value = "Submit">
+    <!-- using button tag -->
+    <button type="submit">Submit</button>
+    <!-- ResetButton -->
+    <button type="reset">Reset</button>
+</form>
+</body>
+</html>
